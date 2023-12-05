@@ -38,6 +38,9 @@
 
         --primary-font: rgb(245, 245, 245);
         --secondary-font: rgb(145, 145, 145);
+
+        --primary-highlight-background: rgb(42, 42, 42);
+        --secondary-highlight-background: rgb(54, 54, 54);
     }
 }
 

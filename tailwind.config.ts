@@ -30,6 +30,8 @@ module.exports = {
                     primary: 'var(--primary-background)',
                     secondary: 'var(--secondary-background)',
                     tertiary: 'var(--tertiary-background)',
+                    'primary-highlight': 'var(--primary-highlight-background)',
+                    'secondary-highlight': 'var(--secondary-highlight-background)',
                 },
                 foreground: 'hsl(var(--foreground))',
                 primary: {
@@ -60,11 +62,6 @@ module.exports = {
                     DEFAULT: 'hsl(var(--card))',
                     foreground: 'hsl(var(--card-foreground))',
                 },
-            },
-            borderRadius: {
-                lg: 'var(--radius)',
-                md: 'calc(var(--radius) - 2px)',
-                sm: 'calc(var(--radius) - 4px)',
             },
             keyframes: {
                 'accordion-down': {

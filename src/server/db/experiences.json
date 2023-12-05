@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "link": "",
+        "description": "Fortnite Lego",
+        "imgUrl": "/experiences/fortnite-lego.webp"
+    },
+    {
+        "id": 2,
+        "link": "",
+        "description": "Fortnite Festival",
+        "imgUrl": "/experiences/fortnite-festival.webp"
+    },
+    {
+        "id": 3,
+        "link": "",
+        "description": "Rocket Racing",
+        "imgUrl": "/experiences/rocket-racing.webp"
+    }
+]
