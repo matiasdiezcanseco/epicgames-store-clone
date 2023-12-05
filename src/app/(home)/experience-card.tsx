@@ -15,7 +15,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
     link,
 }) => {
     return (
-        <div key={id} className="rounded-3xl overflow-hidden">
+        <div key={id} className="rounded-2xl overflow-hidden">
             <Link href={link}>
                 <Image
                     src={imgUrl}

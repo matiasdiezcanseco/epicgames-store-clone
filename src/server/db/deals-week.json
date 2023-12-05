@@ -1,0 +1,18 @@
+[
+    {
+      "subtitle": "Base Game",
+      "title" : "Shador Gambit: The Cursed Crew",
+      "discountPercentage": 20,
+      "price": 29.99,
+      "discountPrice": 23.99,
+      "imageUrl": "/deals-week/shadow-gambit.avif"
+    },
+    {
+      "subtitle": "Base Game",
+      "title" : "Sherlock Holmes The Awakened - Standard Edition",
+      "discountPercentage": 50,
+      "price": 39.99,
+      "discountPrice": 19.99,
+      "imageUrl": "/deals-week/sherlock-holmes-the-awakened.avif"
+    }
+]
