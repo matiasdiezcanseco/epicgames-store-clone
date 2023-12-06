@@ -1,0 +1,18 @@
+[
+    {
+        "title": "PUBG: BATTLEGROUNDS",
+        "discountPercentage": 0,
+        "price": 0,
+        "discountPrice": 0,
+        "imageUrl": "/display-games/pubg-battlegrounds.avif",
+        "description": "Experience the biggest update of 2023. The new 8x8 Map, RONDO."
+    },
+    {
+        "title": "Born of Bread",
+        "discountPercentage": 10,
+        "price": 19.99,
+        "discountPrice": 17.99,
+        "imageUrl": "/display-games/born-of-bread.avif",
+        "description": "Save the world of beings from another age with Load and his buddies in this wacky and joyful RPG adventure."
+    }
+]

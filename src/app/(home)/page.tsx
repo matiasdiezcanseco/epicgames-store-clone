@@ -3,6 +3,7 @@ import { SearchBar } from '@/app/(home)/search-bar'
 import { Header } from '@/components/header'
 
 import { Discounts } from './discounts'
+import DisplayGames from './display-games'
 import FreeGames from './free-games'
 
 export default function Store() {
@@ -14,6 +15,7 @@ export default function Store() {
                 <Experiences />
                 <Discounts />
                 <FreeGames />
+                <DisplayGames />
             </div>
         </main>
     )
