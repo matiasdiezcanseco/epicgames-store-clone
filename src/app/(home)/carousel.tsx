@@ -48,7 +48,7 @@ export const Carousel: React.FC<{ experiences: CarouselItem[] }> = ({ experience
         window.addEventListener('resize', handleResize)
 
         return () => window.removeEventListener('resize', handleResize)
-    }, [])
+    }, [startCountdown])
 
     useEffect(() => {
         if (count === 0) {
