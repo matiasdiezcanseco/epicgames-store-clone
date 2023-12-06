@@ -32,6 +32,7 @@ module.exports = {
                     tertiary: 'var(--tertiary-background)',
                     'primary-highlight': 'var(--primary-highlight-background)',
                     'secondary-highlight': 'var(--secondary-highlight-background)',
+                    'tertiary-highlight': 'var(--tertiary-highlight-background)',
                 },
                 foreground: 'hsl(var(--foreground))',
                 primary: {
@@ -51,8 +52,8 @@ module.exports = {
                     foreground: 'hsl(var(--muted-foreground))',
                 },
                 accent: {
-                    DEFAULT: 'hsl(var(--accent))',
-                    foreground: 'hsl(var(--accent-foreground))',
+                    DEFAULT: 'var(--accent)',
+                    highlight: 'var(--accent-highlight)',
                 },
                 popover: {
                     DEFAULT: 'hsl(var(--popover))',

@@ -15,21 +15,30 @@ export const Header = () => {
                 </button>
                 <Divider orientation="vertical" size={26} />
                 <Link href="" className="font-semibold text-xl">
-                    STORE
+                    <Image src="/store-text.svg" width={54} height={32} alt="Store" />
                 </Link>
-                <ul className="flex gap-8">
+                <ul className="flex">
                     <li>
-                        <Link href="" className="text-text-secondary text-sm">
+                        <Link
+                            href=""
+                            className="text-text-secondary text-sm transition duration hover:text-text-primary hover:bg-background-tertiary-highlight py-2 px-4 rounded-md"
+                        >
                             Distribution
                         </Link>
                     </li>
                     <li>
-                        <Link href="" className="text-text-secondary text-sm">
+                        <Link
+                            href=""
+                            className="text-text-secondary text-sm transition duration hover:text-text-primary hover:bg-background-tertiary-highlight py-2 px-4 rounded-md"
+                        >
                             Support
                         </Link>
                     </li>
                     <li>
-                        <Link href="" className="text-text-secondary text-sm">
+                        <Link
+                            href=""
+                            className="text-text-secondary text-sm transition duration hover:text-text-primary hover:bg-background-tertiary-highlight py-2 px-4 rounded-md"
+                        >
                             Unreal Engine
                         </Link>
                     </li>

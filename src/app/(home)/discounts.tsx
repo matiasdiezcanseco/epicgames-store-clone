@@ -52,7 +52,7 @@ export const Discounts = async () => {
     return (
         <>
             <div className="flex flex-col gap-6">
-                <h3>Featured Discounts</h3>
+                <h3 className="text-lg">Featured Discounts</h3>
                 <div className="grid grid-cols-6 gap-4">
                     {discountProducts.map((product) => (
                         <Fragment key={product.title}>

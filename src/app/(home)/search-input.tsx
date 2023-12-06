@@ -14,7 +14,7 @@ const SearchInput = () => {
                     ? 'var(--primary-highlight-background)'
                     : 'var(--tertiary-background)',
             }}
-            className="bg-background-tertiary flex items-center rounded-full py-1 px-2"
+            className="bg-background-tertiary flex items-center rounded-full px-4"
         >
             <Search size={16} />
             <Input

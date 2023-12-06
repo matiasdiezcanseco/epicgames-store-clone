@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { clsx } from 'clsx'
+import { PlusCircle } from 'lucide-react'
 import Image from 'next/image'
 import { useCountdown } from 'usehooks-ts'
 
@@ -15,6 +16,7 @@ type CarouselItem = {
     redirectUrl: string
     subtitle: string
     logoUrl: string
+    price: number
 }
 
 export const Carousel: React.FC<{ experiences: CarouselItem[] }> = ({ experiences }) => {
@@ -61,7 +63,7 @@ export const Carousel: React.FC<{ experiences: CarouselItem[] }> = ({ experience
 
     return (
         <div className="flex gap-4">
-            <div className="w-9/12 relative overflow-hidden">
+            <div className="w-4/5 relative overflow-hidden">
                 <div className="relative" ref={container}>
                     <Image
                         src={selectedExperience.imgUrl}
@@ -86,12 +88,28 @@ export const Carousel: React.FC<{ experiences: CarouselItem[] }> = ({ experience
                             {selectedExperience.description}
                         </p>
                     </div>
-                    <Button className="rounded-md px-4 py-6 max-w-fit">
-                        {selectedExperience.buttonText.toUpperCase()}
-                    </Button>
+                    <div>
+                        {selectedExperience.price > 0 && (
+                            <p className="pb-2">Starting at USD {selectedExperience.price}</p>
+                        )}
+                        <div className="flex gap-2">
+                            <Button className="rounded-md px-4 py-6 max-w-fit" variant="white">
+                                {selectedExperience.buttonText.toUpperCase()}
+                            </Button>
+                            {selectedExperience.price > 0 && (
+                                <Button
+                                    className="rounded-md px-4 py-6 gap-2 max-w-fit text-xs border-none hover:bg-[#66666666]"
+                                    variant="transparent"
+                                >
+                                    <PlusCircle size={20} />
+                                    ADD TO WISHLIST
+                                </Button>
+                            )}
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="grid grid-cols-1 w-3/12 gap-2" style={{ maxHeight: height, height }}>
+            <div className="grid grid-cols-1 w-1/5 gap-2" style={{ maxHeight: height, height }}>
                 {experiences.map((experience) => {
                     const isSelected = selectedExperience.title === experience.title
                     const percentage = (1000 - count) / 10

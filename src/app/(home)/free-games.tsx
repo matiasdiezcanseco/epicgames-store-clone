@@ -13,10 +13,12 @@ const FreeGames = async () => {
         <div className="bg-background-tertiary py-10 px-8 rounded-md flex flex-col gap-6">
             <div className="flex justify-between items-center">
                 <div className="flex gap-4 items-center">
-                    <GiftIcon size={40} />
-                    <h3>Free Games</h3>
+                    <GiftIcon size={35} />
+                    <h3 className="text-lg">Free Games</h3>
                 </div>
-                <Button>VIEW MORE</Button>
+                <Button variant="transparent" className="px-6 py-4">
+                    VIEW MORE
+                </Button>
             </div>
             <div className="grid grid-cols-4 gap-4">
                 {freeGames.map((game) => {

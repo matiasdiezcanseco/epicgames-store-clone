@@ -15,7 +15,10 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
     link,
 }) => {
     return (
-        <div key={id} className="rounded-2xl overflow-hidden">
+        <div
+            key={id}
+            className="rounded-2xl overflow-hidden transition hover:brightness-110 hover:blur-[0.5px]"
+        >
             <Link href={link}>
                 <Image
                     src={imgUrl}

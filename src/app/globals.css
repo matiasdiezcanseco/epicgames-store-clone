@@ -22,9 +22,6 @@
         --muted: 0 0% 14.9%;
         --muted-foreground: 0 0% 63.9%;
 
-        --accent: 0 0% 14.9%;
-        --accent-foreground: 0 0% 98%;
-
         --destructive: 0 62.8% 30.6%;
         --destructive-foreground: 0 0% 98%;
 
@@ -32,15 +29,19 @@
         --input: 0 0% 14.9%;
         --ring: 0 0% 83.1%;
 
+        --accent: rgb(38, 187, 255);
+        --accent-highlight: rgb(97, 205, 255);
+
         --primary-background: rgb(18, 18, 18);
         --secondary-background: rgb(23, 23, 28);
         --tertiary-background: rgb(32, 32, 32);
 
         --primary-font: rgb(245, 245, 245);
-        --secondary-font: rgb(145, 145, 145);
+        --secondary-font: rgb(170, 170, 170);
 
         --primary-highlight-background: rgb(42, 42, 42);
         --secondary-highlight-background: rgb(54, 54, 54);
+        --tertiary-highlight-background: rgb(64, 64, 68);
     }
 }
 
