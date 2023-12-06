@@ -7,7 +7,7 @@ const Divider: React.FC<DividerProps> = ({ orientation = 'horizontal', size }) =
     if (orientation === 'horizontal')
         return (
             <div
-                className="w-full h-[1px] bg-zinc-600"
+                className="h-[1px] w-full bg-zinc-600"
                 style={{
                     width: size,
                 }}

@@ -9,7 +9,7 @@ export default function Store() {
     return (
         <main className="">
             <Header />
-            <div className="max-w-[1600px] w-[80%] mx-auto p-4 flex flex-col gap-10">
+            <div className="mx-auto flex w-[80%] max-w-[1600px] flex-col gap-10 p-4">
                 <SearchBar />
                 <Experiences />
                 <Discounts />

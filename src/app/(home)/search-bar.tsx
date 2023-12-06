@@ -10,13 +10,13 @@ export const SearchBar = () => {
 
     return (
         <div className="flex justify-between pt-4">
-            <div className="flex gap-6 items-center">
+            <div className="flex items-center gap-6">
                 <SearchInput />
                 <ul className="flex gap-6">
                     <li>
                         <Link
                             href=""
-                            className="text-text-secondary text-sm transition hover:text-white"
+                            className="text-sm text-text-secondary transition hover:text-white"
                             style={{ color: pathname === '/' ? 'white' : '' }}
                         >
                             Discover
@@ -25,7 +25,7 @@ export const SearchBar = () => {
                     <li>
                         <Link
                             href=""
-                            className="text-text-secondary text-sm transition hover:text-white"
+                            className="text-sm text-text-secondary transition hover:text-white"
                             style={{ color: pathname === '/browse' ? 'white' : '' }}
                         >
                             Browse
@@ -34,7 +34,7 @@ export const SearchBar = () => {
                     <li>
                         <Link
                             href=""
-                            className="text-text-secondary text-sm transition hover:text-white"
+                            className="text-sm text-text-secondary transition hover:text-white"
                             style={{ color: pathname === '/news' ? 'white' : '' }}
                         >
                             News
@@ -42,11 +42,11 @@ export const SearchBar = () => {
                     </li>
                 </ul>
             </div>
-            <ul className="flex gap-6 items-center">
+            <ul className="flex items-center gap-6">
                 <li>
                     <Link
                         href=""
-                        className="text-text-secondary text-sm transition hover:text-white"
+                        className="text-sm text-text-secondary transition hover:text-white"
                     >
                         Wishlist
                     </Link>
@@ -54,7 +54,7 @@ export const SearchBar = () => {
                 <li>
                     <Link
                         href=""
-                        className="text-text-secondary text-sm transition hover:text-white"
+                        className="text-sm text-text-secondary transition hover:text-white"
                     >
                         Cart
                     </Link>

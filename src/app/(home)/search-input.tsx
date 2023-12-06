@@ -14,13 +14,13 @@ const SearchInput = () => {
                     ? 'var(--primary-highlight-background)'
                     : 'var(--tertiary-background)',
             }}
-            className="bg-background-tertiary flex items-center rounded-full px-4"
+            className="flex items-center rounded-full bg-background-tertiary px-4"
         >
             <Search size={16} />
             <Input
                 onBlur={() => setIsSelected(false)}
                 onFocus={() => setIsSelected(true)}
-                className="bg-transparent border-none focus-visible:ring-transparent focus-visible:ring-offset-0"
+                className="border-none bg-transparent focus-visible:ring-transparent focus-visible:ring-offset-0"
                 placeholder="Search store"
             />
         </div>

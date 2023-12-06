@@ -63,17 +63,17 @@ export const Carousel: React.FC<{ experiences: CarouselItem[] }> = ({ experience
 
     return (
         <div className="flex gap-4">
-            <div className="w-4/5 relative overflow-hidden">
+            <div className="relative w-4/5 overflow-hidden">
                 <div className="relative" ref={container}>
                     <Image
                         src={selectedExperience.imgUrl}
                         alt={selectedExperience.title}
-                        className="rounded-xl overflow-hidden"
+                        className="overflow-hidden rounded-xl"
                         height={1280 / 1.78}
                         width={1280}
                     />
                 </div>
-                <div className="absolute bottom-0 left-0 p-12 w-2/5 flex flex-col gap-6">
+                <div className="absolute bottom-0 left-0 flex w-2/5 flex-col gap-6 p-12">
                     <Image
                         src={selectedExperience.logoUrl}
                         width={280}
@@ -81,10 +81,10 @@ export const Carousel: React.FC<{ experiences: CarouselItem[] }> = ({ experience
                         alt={selectedExperience.title}
                     />
                     <div>
-                        <p className="leading-8 text-sm font-semibold">
+                        <p className="text-sm font-semibold leading-8">
                             {selectedExperience.subtitle.toUpperCase()}
                         </p>
-                        <p className="font-medium leading-2 md:leading-8">
+                        <p className="leading-2 font-medium md:leading-8">
                             {selectedExperience.description}
                         </p>
                     </div>
@@ -93,12 +93,12 @@ export const Carousel: React.FC<{ experiences: CarouselItem[] }> = ({ experience
                             <p className="pb-2">Starting at USD {selectedExperience.price}</p>
                         )}
                         <div className="flex gap-2">
-                            <Button className="rounded-md px-4 py-6 max-w-fit" variant="white">
+                            <Button className="max-w-fit rounded-md px-4 py-6" variant="white">
                                 {selectedExperience.buttonText.toUpperCase()}
                             </Button>
                             {selectedExperience.price > 0 && (
                                 <Button
-                                    className="rounded-md px-4 py-6 gap-2 max-w-fit text-xs border-none hover:bg-[#66666666]"
+                                    className="max-w-fit gap-2 rounded-md border-none px-4 py-6 text-xs hover:bg-[#66666666]"
                                     variant="transparent"
                                 >
                                     <PlusCircle size={20} />
@@ -109,7 +109,7 @@ export const Carousel: React.FC<{ experiences: CarouselItem[] }> = ({ experience
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-1 w-1/5 gap-2" style={{ maxHeight: height, height }}>
+            <div className="grid w-1/5 grid-cols-1 gap-2" style={{ maxHeight: height, height }}>
                 {experiences.map((experience) => {
                     const isSelected = selectedExperience.title === experience.title
                     const percentage = (1000 - count) / 10
@@ -127,13 +127,13 @@ export const Carousel: React.FC<{ experiences: CarouselItem[] }> = ({ experience
                             {isSelected && (
                                 <div
                                     style={{ width: `${percentage}%` }}
-                                    className="absolute bg-background-secondary-highlight top-0 left-0 z-10 h-full"
+                                    className="absolute left-0 top-0 z-10 h-full bg-background-secondary-highlight"
                                 />
                             )}
-                            <div className="relative flex gap-2 items-center z-20 text-left">
+                            <div className="relative z-20 flex items-center gap-2 text-left">
                                 <Image
                                     src={experience.thumbUrl}
-                                    className="rounded-[8px] overflow-hidden"
+                                    className="overflow-hidden rounded-[8px]"
                                     height={(height / 6) * 0.8}
                                     width={(height / (6 * 1.33)) * 0.8}
                                     alt={experience.title}

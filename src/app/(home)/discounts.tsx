@@ -23,7 +23,7 @@ const DiscountCard: React.FC<DiscountCardItem> = ({
     return (
         <div className="flex flex-col gap-2">
             <Image
-                className="rounded-lg overflow-hidden"
+                className="overflow-hidden rounded-lg"
                 src={imageUrl}
                 width={250}
                 height={300}
@@ -31,13 +31,13 @@ const DiscountCard: React.FC<DiscountCardItem> = ({
                 alt={title}
             />
             <div className="flex flex-col gap-1">
-                <p className="text-text-secondary text-xs font-semibold">
+                <p className="text-xs font-semibold text-text-secondary">
                     {subtitle.toUpperCase()}
                 </p>
                 <p>{title}</p>
-                <div className="flex gap-2 items-center">
-                    <p className="bg-sky-600 rounded-md py-1 px-2 text-xs">{discountPercentage}%</p>
-                    <p className="line-through text-text-secondary">USD {price}</p>
+                <div className="flex items-center gap-2">
+                    <p className="rounded-md bg-sky-600 px-2 py-1 text-xs">{discountPercentage}%</p>
+                    <p className="text-text-secondary line-through">USD {price}</p>
                     <p>USD {discountPrice}</p>
                 </div>
             </div>
@@ -68,11 +68,11 @@ export const Discounts = async () => {
                     ))}
                 </div>
             </div>
-            <div className="grid gap-6 grid-cols-3 pt-8">
+            <div className="grid grid-cols-3 gap-6 pt-8">
                 {dealsOfTheWeek.map((deal) => (
                     <div key={deal.title} className="flex flex-col gap-6">
                         <Image
-                            className="rounded-2xl overflow-hidden"
+                            className="overflow-hidden rounded-2xl"
                             src={deal.imageUrl}
                             alt={deal.title}
                             height={854 / 1.78}
@@ -80,11 +80,11 @@ export const Discounts = async () => {
                             style={{ objectFit: 'contain' }}
                         />
                         <p className="text-xl">{deal.title}</p>
-                        <div className="flex gap-2 items-center">
-                            <p className="bg-sky-600 rounded-md py-1 px-2 text-xs">
+                        <div className="flex items-center gap-2">
+                            <p className="rounded-md bg-sky-600 px-2 py-1 text-xs">
                                 {deal.discountPercentage}%
                             </p>
-                            <p className="line-through text-text-secondary text-lg">
+                            <p className="text-lg text-text-secondary line-through">
                                 USD {deal.price}
                             </p>
                             <p className="text-lg">USD {deal.discountPrice}</p>
@@ -93,7 +93,7 @@ export const Discounts = async () => {
                 ))}
                 <div className="flex flex-col gap-6">
                     <Image
-                        className="rounded-2xl overflow-hidden"
+                        className="overflow-hidden rounded-2xl"
                         src="/deals-week/sales-special.avif"
                         alt="Deal's Special"
                         height={854 / 1.78}
