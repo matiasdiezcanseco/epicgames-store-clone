@@ -1,0 +1,26 @@
+[
+    {
+        "imgUrl": "/free/jitsu-squad.avif",
+        "title": "Jitsu Squad",
+        "freeInitialDate": "2023-12-07 00:00:00",
+        "freeFinalDate": null
+    },
+    {
+        "imgUrl": "/free/mighty-fight-federation.avif",
+        "title": "Mighty Fight Federation",
+        "freeInitialDate": "2023-12-07 00:00:00",
+        "freeFinalDate": null
+    },
+    {
+        "imgUrl": "/free/gigabash.avif",
+        "title": "GigaBash",
+        "freeInitialDate": "2023-12-07 00:00:00",
+        "freeFinalDate": "2023-12-13 00:00:00"
+    },
+    {
+        "imgUrl": "/free/predecessor.avif",
+        "title": "Predecessor",
+        "freeInitialDate": "2023-12-07 00:00:00",
+        "freeFinalDate": "2023-12-13 00:00:00"
+    }
+]
