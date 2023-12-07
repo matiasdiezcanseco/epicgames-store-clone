@@ -1,50 +1,98 @@
 [
-  {
-    "subtitle": "Base Game",
-    "title" : "Sherlock Holmes Chapter One",
-    "discountPercentage":80,
-    "price": 59.99,
-    "discountPrice": 11.99,
-    "imageUrl": "/featured-discounts/sherlock-holmes-chapter-one.avif"
-  },
-  {
-    "subtitle": "Base Game",
-    "title" : "Genesis Noir",
-    "discountPercentage":70,
-    "price": 9.99,
-    "discountPrice": 2.99,
-    "imageUrl": "/featured-discounts/genesis-noir.avif"
-  },
-  {
-    "subtitle": "Base Game",
-    "title" : "Civil War Gettysburg",
-    "discountPercentage": 20,
-    "price": 9.99,
-    "discountPrice": 7.99,
-    "imageUrl": "/featured-discounts/civil-war-gettysburg.avif"
-  },
-  {
-    "subtitle": "Base Game",
-    "title" : "SteamWorld Build",
-    "discountPercentage": 10,
-    "price": 19.99,
-    "discountPrice": 17.99,
-    "imageUrl": "/featured-discounts/steamworld-build.avif"
-  },
-  {
-    "subtitle": "Base Game",
-    "title" : "The Ecdysis",
-    "discountPercentage":10,
-    "price": 19.99,
-    "discountPrice": 17.99,
-    "imageUrl": "/featured-discounts/the-ecdysis.avif"
-  },
-  {
-    "subtitle": "Base Game",
-    "title" : "Fishing - North Atlantic",
-    "discountPercentage": 80,
-    "price": 39.99,
-    "discountPrice": 7.99,
-    "imageUrl": "/featured-discounts/fishing-north-atlantic.avif"
-  } 
+    {
+        "subtitle": "Base Game",
+        "title": "Sherlock Holmes Chapter One",
+        "discountPercentage": 80,
+        "price": 59.99,
+        "discountPrice": 11.99,
+        "imageUrl": "/featured-discounts/sherlock-holmes-chapter-one.avif"
+    },
+    {
+        "subtitle": "Base Game",
+        "title": "Genesis Noir",
+        "discountPercentage": 70,
+        "price": 9.99,
+        "discountPrice": 2.99,
+        "imageUrl": "/featured-discounts/genesis-noir.avif"
+    },
+    {
+        "subtitle": "Base Game",
+        "title": "Civil War Gettysburg",
+        "discountPercentage": 20,
+        "price": 9.99,
+        "discountPrice": 7.99,
+        "imageUrl": "/featured-discounts/civil-war-gettysburg.avif"
+    },
+    {
+        "subtitle": "Base Game",
+        "title": "SteamWorld Build",
+        "discountPercentage": 10,
+        "price": 19.99,
+        "discountPrice": 17.99,
+        "imageUrl": "/featured-discounts/steamworld-build.avif"
+    },
+    {
+        "subtitle": "Base Game",
+        "title": "The Ecdysis",
+        "discountPercentage": 10,
+        "price": 19.99,
+        "discountPrice": 17.99,
+        "imageUrl": "/featured-discounts/the-ecdysis.avif"
+    },
+    {
+        "subtitle": "Base Game",
+        "title": "Fishing - North Atlantic",
+        "discountPercentage": 80,
+        "price": 39.99,
+        "discountPrice": 7.99,
+        "imageUrl": "/featured-discounts/fishing-north-atlantic.avif"
+    },
+    {
+        "subtitle": "Base Game",
+        "title": "Sherlock Holmes Chapter One",
+        "discountPercentage": 80,
+        "price": 59.99,
+        "discountPrice": 11.99,
+        "imageUrl": "/featured-discounts/sherlock-holmes-chapter-one.avif"
+    },
+    {
+        "subtitle": "Base Game",
+        "title": "Genesis Noir",
+        "discountPercentage": 70,
+        "price": 9.99,
+        "discountPrice": 2.99,
+        "imageUrl": "/featured-discounts/genesis-noir.avif"
+    },
+    {
+        "subtitle": "Base Game",
+        "title": "Civil War Gettysburg",
+        "discountPercentage": 20,
+        "price": 9.99,
+        "discountPrice": 7.99,
+        "imageUrl": "/featured-discounts/civil-war-gettysburg.avif"
+    },
+    {
+        "subtitle": "Base Game",
+        "title": "SteamWorld Build",
+        "discountPercentage": 10,
+        "price": 19.99,
+        "discountPrice": 17.99,
+        "imageUrl": "/featured-discounts/steamworld-build.avif"
+    },
+    {
+        "subtitle": "Base Game",
+        "title": "The Ecdysis",
+        "discountPercentage": 10,
+        "price": 19.99,
+        "discountPrice": 17.99,
+        "imageUrl": "/featured-discounts/the-ecdysis.avif"
+    },
+    {
+        "subtitle": "Base Game",
+        "title": "Fishing - North Atlantic",
+        "discountPercentage": 80,
+        "price": 39.99,
+        "discountPrice": 7.99,
+        "imageUrl": "/featured-discounts/fishing-north-atlantic.avif"
+    }
 ]

@@ -16,7 +16,7 @@ export const SearchBar = () => {
                     <li>
                         <Link
                             href=""
-                            className="text-sm text-text-secondary transition hover:text-white"
+                            className="text-text-secondary transition hover:text-white"
                             style={{ color: pathname === '/' ? 'white' : '' }}
                         >
                             Discover
@@ -25,7 +25,7 @@ export const SearchBar = () => {
                     <li>
                         <Link
                             href=""
-                            className="text-sm text-text-secondary transition hover:text-white"
+                            className="text-text-secondary transition hover:text-white"
                             style={{ color: pathname === '/browse' ? 'white' : '' }}
                         >
                             Browse
@@ -34,7 +34,7 @@ export const SearchBar = () => {
                     <li>
                         <Link
                             href=""
-                            className="text-sm text-text-secondary transition hover:text-white"
+                            className="text-text-secondary transition hover:text-white"
                             style={{ color: pathname === '/news' ? 'white' : '' }}
                         >
                             News
@@ -44,18 +44,12 @@ export const SearchBar = () => {
             </div>
             <ul className="flex items-center gap-6">
                 <li>
-                    <Link
-                        href=""
-                        className="text-sm text-text-secondary transition hover:text-white"
-                    >
+                    <Link href="" className="text-text-secondary transition hover:text-white">
                         Wishlist
                     </Link>
                 </li>
                 <li>
-                    <Link
-                        href=""
-                        className="text-sm text-text-secondary transition hover:text-white"
-                    >
+                    <Link href="" className="text-text-secondary transition hover:text-white">
                         Cart
                     </Link>
                 </li>

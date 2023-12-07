@@ -1,49 +1,11 @@
 import { Fragment } from 'react'
+import { Button } from '@/components/ui/button'
 import { getDealsOfTheWeek, getFeaturedDiscounts } from '@/server/actions/discounts'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-type DiscountCardItem = {
-    subtitle: string
-    title: string
-    discountPercentage: number
-    price: number
-    discountPrice: number
-    imageUrl: string
-}
-
-const DiscountCard: React.FC<DiscountCardItem> = ({
-    subtitle,
-    title,
-    discountPercentage,
-    price,
-    discountPrice,
-    imageUrl,
-}) => {
-    return (
-        <div className="flex flex-col gap-2">
-            <Image
-                className="overflow-hidden rounded-lg"
-                src={imageUrl}
-                width={250}
-                height={300}
-                style={{ objectFit: 'contain' }}
-                alt={title}
-            />
-            <div className="flex flex-col gap-1">
-                <p className="text-xs font-semibold text-text-secondary">
-                    {subtitle.toUpperCase()}
-                </p>
-                <p>{title}</p>
-                <div className="flex items-center gap-2">
-                    <p className="rounded-md bg-sky-600 px-2 py-1 text-xs">{discountPercentage}%</p>
-                    <p className="text-text-secondary line-through">USD {price}</p>
-                    <p>USD {discountPrice}</p>
-                </div>
-            </div>
-        </div>
-    )
-}
+import { DiscountCard } from './discount-card'
 
 export const Discounts = async () => {
     const discountProducts = await getFeaturedDiscounts()
@@ -52,7 +14,23 @@ export const Discounts = async () => {
     return (
         <>
             <div className="flex flex-col gap-6">
-                <h3 className="text-lg">Featured Discounts</h3>
+                <div className="flex justify-between">
+                    <h3 className="text-lg">Featured Discounts</h3>
+                    <div className="flex gap-2">
+                        <Button
+                            variant="transparent"
+                            className="h-8 w-8 rounded-full border-none bg-background-tertiary p-0 hover:bg-background-primary-highlight"
+                        >
+                            <ChevronLeft size={16} />
+                        </Button>
+                        <Button
+                            variant="transparent"
+                            className="h-8 w-8 rounded-full border-none bg-background-tertiary p-0 hover:bg-background-primary-highlight"
+                        >
+                            <ChevronRight size={16} />
+                        </Button>
+                    </div>
+                </div>
                 <div className="grid grid-cols-6 gap-4">
                     {discountProducts.map((product) => (
                         <Fragment key={product.title}>
@@ -81,7 +59,7 @@ export const Discounts = async () => {
                         />
                         <p className="text-xl">{deal.title}</p>
                         <div className="flex items-center gap-2">
-                            <p className="rounded-md bg-sky-600 px-2 py-1 text-xs">
+                            <p className="rounded-md bg-accent px-2 py-1 text-xs">
                                 {deal.discountPercentage}%
                             </p>
                             <p className="text-lg text-text-secondary line-through">

@@ -5,7 +5,7 @@ import discounts from '@/server/db/featured-discounts.json'
 
 export const getFeaturedDiscounts = async () => {
     await new Promise((resolve) => setTimeout(resolve, 200))
-    return discounts
+    return discounts.slice(0, 6)
 }
 
 export const getDealsOfTheWeek = async () => {

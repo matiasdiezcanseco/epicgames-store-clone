@@ -68,7 +68,7 @@ export const Carousel: React.FC<{ experiences: CarouselItem[] }> = ({ experience
                     <Image
                         src={selectedExperience.imgUrl}
                         alt={selectedExperience.title}
-                        className="overflow-hidden rounded-xl"
+                        className="overflow-hidden rounded-xl brightness-75"
                         height={1280 / 1.78}
                         width={1280}
                     />
