@@ -1,0 +1,37 @@
+[
+    {
+        "title": "EA SPORTS FC™ 24 Standard Edition",
+        "imgUrl": "/top-sellers/ea-sports-fc-24.avif",
+        "price": 69.99,
+        "discountPercentage": 60,
+        "discountPrice": 27.99
+    },
+    {
+        "title": "Alan Wake 2",
+        "imgUrl": "/top-sellers/alan-wake-2.avif",
+        "price": 69.99,
+        "discountPercentage": 20,
+        "discountPrice": 55.99
+    },
+    {
+        "title": "Red Dead Redemption 2",
+        "imgUrl": "/top-sellers/red-dead-redemption-2.avif",
+        "price": 69.99,
+        "discountPercentage": 67,
+        "discountPrice": 22.99
+    },
+    {
+        "title": "Avatar: Frontiers of Pandora",
+        "imgUrl": "/top-sellers/avatar-frontiers-of-pandora.avif",
+        "price": 69.99,
+        "discountPercentage": 0,
+        "discountPrice": 69.99
+    },
+    {
+        "title": "Hogwarts Legacy",
+        "imgUrl": "/top-sellers/hogwarts-legacy.avif",
+        "price": 39.99,
+        "discountPercentage": 40,
+        "discountPrice": 23.99
+    }
+]

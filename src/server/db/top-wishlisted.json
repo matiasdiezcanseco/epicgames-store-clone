@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Black Myth: Wukong",
+        "imgUrl": "/top-wishlisted/black-myth-wukong.avif",
+        "price": 69.99,
+        "discountPercentage": 0,
+        "discountPrice": 69.99,
+        "released": false
+    },
+    {
+        "title": "Homeworld 3",
+        "imgUrl": "/top-wishlisted/homeworld-3.avif",
+        "price": 49.99,
+        "discountPercentage": 0,
+        "discountPrice": 49.99,
+        "released": false
+    },
+    {
+        "title": "SKULL AND BONES™",
+        "imgUrl": "/top-wishlisted/skull-and-bones.avif",
+        "price": 29.99,
+        "discountPercentage": 0,
+        "discountPrice": 29.99,
+        "released": false
+    },
+    {
+        "title": "The Wolf Among Us 2",
+        "imgUrl": "/top-wishlisted/the-wolf-among-us-2.avif",
+        "price": 39.99,
+        "discountPercentage": 0,
+        "discountPrice": 39.99,
+        "released": false
+    },
+    {
+        "title": "Frostpunk 2",
+        "imgUrl": "/top-wishlisted/frostpunk-2.avif",
+        "price": 39.99,
+        "discountPercentage": 0,
+        "discountPrice": 39.99,
+        "released": false
+    }
+]

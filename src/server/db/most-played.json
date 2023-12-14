@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Fortnite",
+        "imgUrl": "/most-played/fortnite.avif",
+        "price": 0,
+        "discountPercentage": 0,
+        "discountPrice": 0
+    },
+    {
+        "title": "Rocket League",
+        "imgUrl": "/most-played/rocket-league.avif",
+        "price": 0,
+        "discountPercentage": 0,
+        "discountPrice": 0
+    },
+    {
+        "title": "Grand Theft Auto V",
+        "imgUrl": "/most-played/grand-theft-auto-v.avif",
+        "price": 29.99,
+        "discountPercentage": 50,
+        "discountPrice": 14.99
+    },
+    {
+        "title": "Genshin Impact",
+        "imgUrl": "/most-played/genshin-impact.avif",
+        "price": 0,
+        "discountPercentage": 0,
+        "discountPrice": 0
+    },
+    {
+        "title": "VALORANT",
+        "imgUrl": "/most-played/valorant.avif",
+        "price": 0,
+        "discountPercentage": 0,
+        "discountPrice": 0
+    }
+]

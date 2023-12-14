@@ -1,13 +1,21 @@
-import { getDisplayGames } from '@/server/actions/display'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export const DisplayGames = async () => {
-    const displayGames = await getDisplayGames()
+interface DoubleDisplayProps {
+    products: {
+        title: string
+        discountPercentage: number
+        price: number
+        discountPrice: number
+        imageUrl: string
+        description: string
+    }[]
+}
 
+export const DoubleDisplay: React.FC<DoubleDisplayProps> = async ({ products }) => {
     return (
         <div className="grid grid-cols-2 gap-6">
-            {displayGames.map((game) => (
+            {products.map((game) => (
                 <div className="flex flex-col gap-6" key={game.title}>
                     <Image
                         className="overflow-hidden rounded-2xl"
@@ -45,4 +53,4 @@ export const DisplayGames = async () => {
     )
 }
 
-export default DisplayGames
+export default DoubleDisplay
