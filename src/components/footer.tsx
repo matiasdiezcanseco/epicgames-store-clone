@@ -1,5 +1,7 @@
-import { ChevronUp, Facebook, Twitter, Youtube } from 'lucide-react'
+import { ChevronUp } from 'lucide-react'
 import Link from 'next/link'
+import { FaFacebook, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { SiEpicgames, SiUnrealengine } from 'react-icons/si'
 
 import { Button } from './ui/button'
 import Divider from './ui/divider'
@@ -10,13 +12,22 @@ export const Footer = async () => {
             <div className="flex justify-between">
                 <ul className="flex gap-6">
                     <li>
-                        <Facebook size={30} className="text-text-secondary" />
+                        <FaFacebook
+                            size={30}
+                            className="text-text-secondary transition-all duration-500 hover:text-sky-500"
+                        />
                     </li>
                     <li>
-                        <Twitter size={30} className="text-text-secondary" />
+                        <FaTwitter
+                            size={30}
+                            className="text-text-secondary transition-all duration-500 hover:text-sky-500"
+                        />
                     </li>
                     <li>
-                        <Youtube size={30} className="text-text-secondary" />
+                        <FaYoutube
+                            size={30}
+                            className="text-text-secondary transition-all duration-500 hover:text-sky-500"
+                        />
                     </li>
                 </ul>
                 <Button variant="transparent" className="p-2">
@@ -26,35 +37,65 @@ export const Footer = async () => {
             <div className="flex">
                 <div className="flex flex-col gap-2">
                     <h4 className="text-sm font-semibold text-text-secondary">Resources</h4>
-                    <div className="grid grid-cols-3">
-                        <Link className="pb-2 pr-4 text-sm text-text-primary" href="">
+                    <div className="grid max-w-[700px] grid-cols-3">
+                        <Link
+                            className="pb-2 pr-4 text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             Support-A-Creator
                         </Link>
-                        <Link className="text- pb-2 pr-4 text-sm text-text-primary" href="">
+                        <Link
+                            className="text- pb-2 pr-4 text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             Fan Art Policy
                         </Link>
-                        <Link className="pb-2 pr-4 text-sm text-text-primary" href="">
+                        <Link
+                            className="pb-2 pr-4 text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             Online Services
                         </Link>
-                        <Link className="pb-2 pr-4 text-sm text-text-primary" href="">
+                        <Link
+                            className="pb-2 pr-4 text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             Distribute on Epic Games
                         </Link>
-                        <Link className="pb-2 pr-4 text-sm text-text-primary" href="">
+                        <Link
+                            className="pb-2 pr-4 text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             UX Research
                         </Link>
-                        <Link className="pb-2 pr-4 text-sm text-text-primary" href="">
+                        <Link
+                            className="pb-2 pr-4 text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             Community Rules
                         </Link>
-                        <Link className="pb-2 pr-4 text-sm text-text-primary" href="">
+                        <Link
+                            className="pb-2 pr-4 text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             Careers
                         </Link>
-                        <Link className="pb-2 pr-4 text-sm text-text-primary" href="">
+                        <Link
+                            className="pb-2 pr-4 text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             Store EULA
                         </Link>
-                        <Link className="pb-2 pr-4 text-sm text-text-primary" href="">
+                        <Link
+                            className="pb-2 pr-4 text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             Epic Newsroom
                         </Link>
-                        <Link className="pb-2 pr-4 text-sm text-text-primary" href="">
+                        <Link
+                            className="pb-2 pr-4 text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             Company
                         </Link>
                     </div>
@@ -63,23 +104,41 @@ export const Footer = async () => {
                     <h4 className="text-sm font-semibold text-text-secondary">
                         Made By Epic Games
                     </h4>
-                    <div className="grid grid-cols-3">
-                        <Link className="pb-2 pr-4 text-sm text-text-primary" href="">
+                    <div className="grid max-w-[700px] grid-cols-3">
+                        <Link
+                            className="pb-2 pr-4 text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             Battle Breakers
                         </Link>
-                        <Link className="pb-2 pr-4 text-sm text-text-primary" href="">
+                        <Link
+                            className="pb-2 pr-4 text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             Robo Recall
                         </Link>
-                        <Link className="pb-2 pr-4 text-sm text-text-primary" href="">
+                        <Link
+                            className="pb-2 pr-4 text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             Fortnite
                         </Link>
-                        <Link className="pb-2 pr-4 text-sm text-text-primary" href="">
+                        <Link
+                            className="pb-2 pr-4 text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             Shadow Complex
                         </Link>
-                        <Link className="pb-2 pr-4 text-sm text-text-primary" href="">
+                        <Link
+                            className="pb-2 pr-4 text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             Infinity Blade
                         </Link>
-                        <Link className="pb-2 pr-4 text-sm text-text-primary" href="">
+                        <Link
+                            className="pb-2 pr-4 text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             Unreal Tournament
                         </Link>
                     </div>
@@ -96,24 +155,43 @@ export const Footer = async () => {
             <div className="flex justify-between">
                 <ul className="flex gap-4">
                     <li>
-                        <Link className="text-sm text-text-primary" href="">
+                        <Link
+                            className="text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             Terms of Service
                         </Link>
                     </li>
                     <li>
-                        <Link className="text-sm text-text-primary" href="">
+                        <Link
+                            className="text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             Privacy Policy
                         </Link>
                     </li>
                     <li>
-                        <Link className="text-sm text-text-primary" href="">
+                        <Link
+                            className="text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            href=""
+                        >
                             Store Refund Policy
                         </Link>
                     </li>
                 </ul>
                 <div className="flex gap-4">
-                    <p>Epic Games</p>
-                    <p>Unreal Engine</p>
+                    <Link href="">
+                        <SiEpicgames
+                            size={35}
+                            className="text-text-secondary transition-all duration-500 hover:text-text-primary"
+                        />
+                    </Link>
+                    <Link href="">
+                        <SiUnrealengine
+                            size={35}
+                            className="text-text-secondary transition-all duration-500 hover:text-text-primary"
+                        />
+                    </Link>
                 </div>
             </div>
         </div>
