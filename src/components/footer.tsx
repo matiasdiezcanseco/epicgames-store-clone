@@ -8,36 +8,30 @@ import Divider from './ui/divider'
 
 export const Footer = async () => {
     return (
-        <div className="flex flex-col gap-4 bg-background-tertiary px-12 py-10">
+        <div className="flex flex-col gap-6 bg-background-tertiary px-6 py-10 md:px-12">
             <div className="flex justify-between">
-                <ul className="flex gap-6">
-                    <li>
-                        <FaFacebook
-                            size={30}
-                            className="text-text-secondary transition-all duration-500 hover:text-sky-500"
-                        />
-                    </li>
-                    <li>
-                        <FaTwitter
-                            size={30}
-                            className="text-text-secondary transition-all duration-500 hover:text-sky-500"
-                        />
-                    </li>
-                    <li>
-                        <FaYoutube
-                            size={30}
-                            className="text-text-secondary transition-all duration-500 hover:text-sky-500"
-                        />
-                    </li>
-                </ul>
+                <div className="flex gap-2">
+                    <FaFacebook
+                        size={30}
+                        className="text-text-secondary transition-all duration-500 hover:text-sky-500"
+                    />
+                    <FaTwitter
+                        size={30}
+                        className="text-text-secondary transition-all duration-500 hover:text-sky-500"
+                    />
+                    <FaYoutube
+                        size={30}
+                        className="text-text-secondary transition-all duration-500 hover:text-sky-500"
+                    />
+                </div>
                 <Button variant="transparent" className="p-2">
                     <ChevronUp size={20} className="text-text-secondary" />
                 </Button>
             </div>
-            <div className="flex">
+            <div className="flex flex-col gap-8 xl:flex-row xl:gap-0">
                 <div className="flex flex-col gap-2">
                     <h4 className="text-sm font-semibold text-text-secondary">Resources</h4>
-                    <div className="grid max-w-[700px] grid-cols-3">
+                    <div className="grid max-w-[700px] grid-cols-2 sm:grid-cols-3">
                         <Link
                             className="pb-2 pr-4 text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
                             href=""
@@ -104,7 +98,7 @@ export const Footer = async () => {
                     <h4 className="text-sm font-semibold text-text-secondary">
                         Made By Epic Games
                     </h4>
-                    <div className="grid max-w-[700px] grid-cols-3">
+                    <div className="grid max-w-[700px] grid-cols-2 sm:grid-cols-3">
                         <Link
                             className="pb-2 pr-4 text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
                             href=""
@@ -152,8 +146,8 @@ export const Footer = async () => {
                 trademarks of Epic Games, Inc. in the United States of America and elsewhere. Other
                 brands or product names are the trademarks of their respective owners.
             </p>
-            <div className="flex justify-between">
-                <ul className="flex gap-4">
+            <div className="flex flex-col items-center justify-between gap-6 text-center md:flex-row md:items-start md:gap-0">
+                <ul className="flex flex-col gap-4 md:flex-row">
                     <li>
                         <Link
                             className="text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
