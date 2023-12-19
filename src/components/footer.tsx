@@ -1,3 +1,5 @@
+'use client'
+
 import { ChevronUp } from 'lucide-react'
 import Link from 'next/link'
 import { FaFacebook, FaTwitter, FaYoutube } from 'react-icons/fa'
@@ -6,25 +8,38 @@ import { SiEpicgames, SiUnrealengine } from 'react-icons/si'
 import { Button } from './ui/button'
 import Divider from './ui/divider'
 
-export const Footer = async () => {
+export const Footer = () => {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        })
+    }
+
     return (
         <div className="flex flex-col gap-6 bg-background-tertiary px-6 py-10 md:px-12">
             <div className="flex justify-between">
                 <div className="flex gap-2">
-                    <FaFacebook
-                        size={30}
-                        className="text-text-secondary transition-all duration-500 hover:text-sky-500"
-                    />
-                    <FaTwitter
-                        size={30}
-                        className="text-text-secondary transition-all duration-500 hover:text-sky-500"
-                    />
-                    <FaYoutube
-                        size={30}
-                        className="text-text-secondary transition-all duration-500 hover:text-sky-500"
-                    />
+                    <Link href="">
+                        <FaFacebook
+                            size={30}
+                            className="text-text-secondary transition-all duration-500 hover:text-sky-500"
+                        />
+                    </Link>
+                    <Link href="">
+                        <FaTwitter
+                            size={30}
+                            className="text-text-secondary transition-all duration-500 hover:text-sky-500"
+                        />
+                    </Link>
+                    <Link href="">
+                        <FaYoutube
+                            size={30}
+                            className="text-text-secondary transition-all duration-500 hover:text-sky-500"
+                        />
+                    </Link>
                 </div>
-                <Button variant="transparent" className="p-2">
+                <Button variant="transparent" className="p-2" onClick={scrollToTop}>
                     <ChevronUp size={20} className="text-text-secondary" />
                 </Button>
             </div>
@@ -150,7 +165,7 @@ export const Footer = async () => {
                 <ul className="flex flex-col gap-4 md:flex-row">
                     <li>
                         <Link
-                            className="text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            className="text-xs text-text-primary transition-all duration-500 hover:text-sky-500"
                             href=""
                         >
                             Terms of Service
@@ -158,7 +173,7 @@ export const Footer = async () => {
                     </li>
                     <li>
                         <Link
-                            className="text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            className="text-xs text-text-primary transition-all duration-500 hover:text-sky-500"
                             href=""
                         >
                             Privacy Policy
@@ -166,7 +181,7 @@ export const Footer = async () => {
                     </li>
                     <li>
                         <Link
-                            className="text-sm text-text-primary transition-all duration-500 hover:text-sky-500"
+                            className="text-xs text-text-primary transition-all duration-500 hover:text-sky-500"
                             href=""
                         >
                             Store Refund Policy
