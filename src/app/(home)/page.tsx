@@ -1,5 +1,6 @@
 import { Experiences } from '@/app/(home)/experiences'
 import { SearchBar } from '@/app/(home)/search-bar'
+import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { getDealsOfTheWeek, getFeaturedDiscounts } from '@/server/actions/discounts'
 import { getDisplayGames } from '@/server/actions/display'
@@ -37,6 +38,7 @@ export default async function Store() {
                     thirdColumn={{ products: topWishlisted, title: 'Top Wishlisted' }}
                 />
             </div>
+            <Footer />
         </main>
     )
 }
